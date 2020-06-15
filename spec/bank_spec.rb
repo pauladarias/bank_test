@@ -15,4 +15,8 @@ describe Bank do
     expect(bank.deposit(20)). to eq(bank.balance)
   end 
 
+  it 'should rest 20 to balance' do 
+    expect(bank.withdrawal(20)).to eq(bank.balance)
+  end 
+
 end

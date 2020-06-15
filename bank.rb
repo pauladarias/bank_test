@@ -7,6 +7,10 @@ class Bank
   end 
 
   def deposit(input)
-      @balance += input
+    @balance += input
+  end 
+
+  def withdrawal(input)
+    @balance -= input
   end 
 end 
