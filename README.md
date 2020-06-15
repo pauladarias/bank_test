@@ -24,7 +24,8 @@ date       || credit  || debit  || balance
 
 | IN    | OUT    |
 |-------|--------|
-| 0     |  0  |
-| 10    |  10  |
-| 20    |  30  |
-|
+| 0     |  0     |  --> Initialized object with Balance 0
+| 10    |  10    |  --> Deposit method to add ammount to balance
+| 20    |  30    |  --> Withdrawal method to subtract ammount to balance
+| ----  |----    |
+| print | print date | --> Print method to print date     

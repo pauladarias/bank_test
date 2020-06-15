@@ -13,4 +13,8 @@ class Bank
   def withdrawal(input)
     @balance -= input
   end 
+
+  def date
+    current_date = Time.new.strftime("%d/%m/%Y")
+  end 
 end 

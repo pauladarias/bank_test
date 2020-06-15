@@ -6,17 +6,26 @@ describe Bank do
   it 'sould return balance 0' do 
     expect(bank.balance). to eq(0)
   end 
-  
-  it 'should add 10 to balance 0' do 
-    expect(bank.deposit(10)). to eq(10)
+
+  context 'movements' do 
+    it 'should add 10 to balance 0' do 
+      expect(bank.deposit(10)). to eq(10)
+    end 
+
+    it 'should add 20 to balance 10' do 
+      expect(bank.deposit(20)). to eq(bank.balance)
+    end 
+
+    it 'should rest 20 to balance' do 
+      expect(bank.withdrawal(20)).to eq(bank.balance)
+    end 
   end 
 
-  it 'should add 20 to balance 10' do 
-    expect(bank.deposit(20)). to eq(bank.balance)
+  context 'print movements' do 
+    it 'should return current date' do 
+      current_date = Time.new.strftime("%d/%m/%Y")
+      expect(bank.date).to eq(current_date)
+    end 
   end 
+end 
 
-  it 'should rest 20 to balance' do 
-    expect(bank.withdrawal(20)).to eq(bank.balance)
-  end 
-
-end
