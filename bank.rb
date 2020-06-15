@@ -1,6 +1,12 @@
 class Bank 
 
-  def in(input)
-    1000
+  attr_reader :balance
+
+  def initialize(balance = 0)
+    @balance = balance
   end 
+
+  # def in(input)
+  #   input + 1000
+  # end 
 end 
