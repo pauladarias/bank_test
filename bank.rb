@@ -7,6 +7,8 @@ class Bank
   end 
 
   def in(input)
-    input
+    if input > 0
+      @balance += input
+    end 
   end 
 end 
