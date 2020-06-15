@@ -21,14 +21,10 @@ describe Bank do
     end 
   end 
 
-  context 'print movements' do 
+  context 'Date' do 
     it 'should return current date' do 
       current_date = Time.new.strftime("%d/%m/%Y")
       expect(bank.date).to eq(Time.new.strftime("%d/%m/%Y"))
-    end 
-
-    it "prints the bank statement" do 
-      expect {bank.print}.to output(" DATE   CREDIT   DEBIT  BALANCE\n-------------------------------\n").to_stdout
     end 
   end 
 

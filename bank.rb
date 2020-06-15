@@ -20,9 +20,4 @@ class Bank
     current_date = Time.new.strftime("%d/%m/%Y")
   end 
 
-  def print 
-    puts " DATE   CREDIT   DEBIT  BALANCE"
-    puts "-------------------------------"
-    #puts "#{date}  #{deposit(amount)} #{withdrawal(amount)} #{balance}"
-  end 
 end 
