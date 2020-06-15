@@ -7,8 +7,8 @@ describe Bank do
     expect(bank.balance). to eq(0)
   end 
 
-  # it 'should return 3000' do 
-  #   expect(bank.in(2000)). to eq(3000)
-  # end 
+  it 'should return 10' do 
+    expect(bank.in(10)). to eq(10)
+  end 
 
 end

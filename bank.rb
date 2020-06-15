@@ -6,7 +6,7 @@ class Bank
     @balance = balance
   end 
 
-  # def in(input)
-  #   input + 1000
-  # end 
+  def in(input)
+    input
+  end 
 end 
